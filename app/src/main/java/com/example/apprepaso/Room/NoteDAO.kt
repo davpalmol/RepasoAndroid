@@ -1,4 +1,4 @@
-package com.example.apprepaso
+package com.example.apprepaso.Room
 
 import androidx.room.Dao
 import androidx.room.Delete

@@ -41,11 +41,15 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.preference.ktx)
     val roomVersion = "2.6.1"
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:$roomVersion")
     implementation ("com.airbnb.android:lottie:6.5.2")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.code.gson:gson:2.8.9")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

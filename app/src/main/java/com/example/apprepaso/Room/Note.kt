@@ -1,4 +1,4 @@
-package com.example.apprepaso
+package com.example.apprepaso.Room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

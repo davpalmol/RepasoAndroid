@@ -1,24 +1,67 @@
-package com.example.apprepaso
+package com.example.apprepaso.Room
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.example.apprepaso.R
+import com.example.apprepaso.Settings.SettingsActivity
 import com.example.apprepaso.databinding.ActivityDetailsBinding
 import java.util.Date
 
 class DetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailsBinding
+    private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+
+        drawerLayout = findViewById(R.id.drawer_layout)
+
+        // Configurar DrawerLayout con Toolbar
+        val toggle = ActionBarDrawerToggle(
+            this, drawerLayout, binding.toolbar,
+            R.string.navigation_drawer_open, R.string.navigation_drawer_close
+        )
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        binding.navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_home -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+
+                R.id.nav_settings -> {
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
+                }
+
+                R.id.nav_lista -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+
+                R.id.nav_configurar -> {
+                    val intent = Intent(this, DetailsActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+            drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
 
         val nota = intent.getSerializableExtra("Nota") as? Note
 

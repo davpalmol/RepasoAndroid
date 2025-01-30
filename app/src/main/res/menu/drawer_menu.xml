@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Configuración"
+        android:icon="@drawable/ic_settings" />
+    <item
+        android:id="@+id/nav_lista"
+        android:title="Lista de Notas"
+        android:icon="@drawable/baseline_account_balance_24" />
+    <item
+        android:id="@+id/nav_configurar"
+        android:title="Configurar Nota"
+        android:icon="@drawable/ic_movements" />
+</menu>

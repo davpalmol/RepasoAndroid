@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">AppRepaso</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <string name="musica">Música</string>
+    <string name="musicaOn">Escuchar la música mientras se ejecuta la aplicación</string>
+    <string name="musicaOff">No escuchar la música mientras se ejecuta la aplicación</string>
+    <string name="video">Video de Bienvenida\n</string>
+    <string name="videoOff">No reproducir un video al iniciar la aplicacion\n</string>
+    <string name="videoOn">Reproducir un video al iniciar la aplicacion\n</string>
+    <string name="idioma">Idioma</string>
+    <string name="indicarIdioma">Indicar Idioma</string>
+    <string name="datos">Datos</string>
+    <string name="settings">Configuración</string>
+    <string name="multimedia">Multimedia</string>
+    <string-array name="datos">
+        <item>Base de datos local </item>
+        <item>Servicio web</item>
+    </string-array>
+    <string-array name="idioma">
+        <item>Español</item>
+        <item>Frances</item>
+        <item>Aleman</item>
+    </string-array>
+    <string-array name="codigopais">
+        <item>ESP</item>
+        <item>FRA</item>
+        <item>ALE</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.apprepaso
+package com.example.apprepaso.Room
 
 import android.app.Application
 import androidx.room.Room

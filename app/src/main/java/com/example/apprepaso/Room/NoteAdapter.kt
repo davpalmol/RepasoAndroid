@@ -1,10 +1,10 @@
-package com.example.apprepaso
+package com.example.apprepaso.Room
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.apprepaso.R
 import com.example.apprepaso.databinding.ItemNotasBinding
 
 class NoteAdapter(private var notas: MutableList<Note>, private var listener: onClickListener) : RecyclerView.Adapter<NoteAdapter.ViewHolder>() {

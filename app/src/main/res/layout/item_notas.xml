@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:text="Deberes de matematicas"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
             app:layout_constraintStart_toEndOf="@id/img_notas"
@@ -33,8 +34,9 @@
             android:id="@+id/fecha_nota"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_gravity="center_vertical"
+            android:text="30-Jan-2025"
             android:layout_marginStart="10dp"
             app:layout_constraintStart_toEndOf="@id/img_notas"
             app:layout_constraintTop_toBottomOf="@id/titulo_nota"/>
